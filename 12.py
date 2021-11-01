@@ -1,9 +1,9 @@
-aaaa = 1
-menu = int(input("1-Somar \n2-Multiplicar \n3-Maior \n4-Menor \n5-Sair"))
+
+menu = int(input("1-Somar \n 2-Multiplicar \n 3-Maior \n 4-Menor \n 5-Sair \n"))
 a = int(input("Digite um valor "))
 b =  int(input("Digite outro valor"))
 
-while(aaaa==1):
+while True:
     if menu == 1 :
         print(a+b)
         break
@@ -16,12 +16,11 @@ while(aaaa==1):
     else:
         print(b)
         break
-    if menu == 4 and a < b:
+    if menu == 4 and a > b:
         print (b)
         break
     else:
         print(a)
         break
-    if menu ==5 :
-        aaaa = 0 
+    if menu == 5 : 
         break                   

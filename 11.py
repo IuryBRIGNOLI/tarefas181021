@@ -1,4 +1,7 @@
-sexo = str(input("Masculino -M  Feminino -F ")).upper()
-while (sexo != "M") or (sexo != "F"):
-    print("Tente novamente")
-print(sexo)
+next = 1
+ 
+while(next == 1):
+    sexo = input('Digite seu sexo (M ou F):')
+    if(sexo == "M" or sexo == "F"):
+        next = 0
+    else: print("Errado digite novamente!!")
